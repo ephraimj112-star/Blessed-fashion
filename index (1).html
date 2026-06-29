@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ብለዝድ ፋሽን — ዘመናዊ ልብስ፣ ምርጥ ጥራት</title>
+  <meta name="description" content="ብለዝድ ፋሽን — ዘመናዊ ልብስ፣ ጫማ፣ ቦርሳ እና ኮፍያ። ምርጥ ጥራት ባለው ዋጋ። አዲስ አበባ ውስጥ ፈጣን ዴሊቨሪ።" />
+  <meta name="keywords" content="ብለዝድ ፋሽን, ልብስ, ፋሽን, አዲስ አበባ, ጫማ, ቦርሳ, ወንዶች ልብስ, ሴቶች ልብስ" />
+  <meta name="author" content="ብለዝድ ፋሽን" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://blezdfashion.com/" />
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://blezdfashion.com/" />
+  <meta property="og:title" content="ብለዝድ ፋሽን — ዘመናዊ ልብስ፣ ምርጥ ጥራት" />
+  <meta property="og:description" content="ዘመናዊ ልብስ፣ ጫማ እና ቦርሳ። ምርጥ ጥራት ባለው ዋጋ። አዲስ አበባ ውስጥ ፈጣን ዴሊቨሪ።" />
+  <meta property="og:locale" content="am_ET" />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ClothingStore",
+    "name": "ብለዝድ ፋሽን",
+    "description": "ዘመናዊ ልብስ፣ ጫማ፣ ቦርሳ እና ኮፍያ",
+    "url": "https://blezdfashion.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "አዲስ አበባ",
+      "addressCountry": "ET"
+    },
+    "openingHours": "Mo-Sa 09:00-20:00",
+    "telephone": "+251911000000"
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --black: #1a1a1a;
+      --white: #ffffff;
+      --gray-light: #f5f5f3;
+      --gray-mid: #e8e8e5;
+      --gray-dark: #888;
+      --gold: #c4926a;
+      --gold-dark: #a07050;
+      --green: #1D9E75;
+      --green-dark: #0F6E56;
+      --green-light: #E1F5EE;
+      --radius: 8px;
+      --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    }
+
+    body { font-family: var(--font); color: var(--black); background: var(--white); }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1rem 2rem; background: var(--white);
+      border-bottom: 1px solid var(--gray-mid);
+    }
+    .logo { font-size: 20px; font-weight: 700; letter-spacing: 3px; }
+    .logo span { color: var(--gold); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { font-size: 14px; color: #555; }
+    .nav-links a:hover { color: var(--black); }
+    .nav-right { display: flex; align-items: center; gap: 1rem; }
+    .cart-btn {
+      background: var(--black); color: var(--white);
+      border: none; padding: 8px 18px; border-radius: var(--radius);
+      font-size: 13px; cursor: pointer; display: flex; align-items: center; gap: 6px;
+    }
+    .hamburger { display: none; font-size: 22px; cursor: pointer; border: none; background: none; }
+
+    /* HERO */
+    .hero {
+      min-height: 500px; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; text-align: center;
+      padding: 4rem 2rem; background: var(--gray-light);
+    }
+    .hero-badge {
+      font-size: 11px; letter-spacing: 4px; color: var(--gold);
+      text-transform: uppercase; margin-bottom: 1rem;
+    }
+    .hero h1 { font-size: 48px; font-weight: 700; line-height: 1.15; margin-bottom: 1rem; }
+    .hero p { font-size: 16px; color: #555; max-width: 500px; margin-bottom: 2rem; line-height: 1.7; }
+    .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+    .btn-dark {
+      background: var(--black); color: var(--white);
+      padding: 13px 30px; border: none; border-radius: var(--radius);
+      font-size: 14px; cursor: pointer; font-family: var(--font);
+    }
+    .btn-outline {
+      background: transparent; color: var(--black);
+      border: 1px solid #ccc; padding: 13px 30px;
+      border-radius: var(--radius); font-size: 14px; cursor: pointer;
+      font-family: var(--font);
+    }
+    .btn-dark:hover { background: #333; }
+    .btn-outline:hover { border-color: var(--black); }
+
+    /* STATS BAR */
+    .stats-bar {
+      display: flex; justify-content: center; gap: 0;
+      border-top: 1px solid var(--gray-mid);
+      border-bottom: 1px solid var(--gray-mid);
+      background: var(--white);
+    }
+    .stat {
+      flex: 1; text-align: center; padding: 1.2rem 1rem;
+      border-right: 1px solid var(--gray-mid);
+    }
+    .stat:last-child { border-right: none; }
+    .stat-num { font-size: 22px; font-weight: 700; }
+    .stat-label { font-size: 12px; color: var(--gray-dark); margin-top: 2px; }
+
+    /* SECTIONS */
+    .section { padding: 3.5rem 2rem; max-width: 1100px; margin: 0 auto; }
+    .section-header { margin-bottom: 2rem; }
+    .section-header h2 { font-size: 26px; font-weight: 700; }
+    .section-header p { font-size: 14px; color: #666; margin-top: 6px; }
+
+    /* CATEGORIES */
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+    }
+    .cat-card {
+      background: var(--gray-light); border-radius: 12px;
+      padding: 1.5rem 1rem; text-align: center; cursor: pointer;
+      transition: background 0.2s;
+    }
+    .cat-card:hover { background: var(--gray-mid); }
+    .cat-icon { font-size: 32px; margin-bottom: 10px; }
+    .cat-name { font-size: 14px; font-weight: 600; }
+    .cat-count { font-size: 12px; color: var(--gray-dark); margin-top: 4px; }
+
+    /* PRODUCTS */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .product-card {
+      background: var(--white); border: 1px solid var(--gray-mid);
+      border-radius: 12px; overflow: hidden; cursor: pointer;
+      transition: border-color 0.2s;
+    }
+    .product-card:hover { border-color: #bbb; }
+    .product-img {
+      height: 200px; display: flex; align-items: center;
+      justify-content: center; font-size: 56px; background: var(--gray-light);
+    }
+    .product-info { padding: 14px; }
+    .product-name { font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+    .product-price { font-size: 15px; color: var(--gold-dark); font-weight: 700; }
+    .product-old { font-size: 12px; color: var(--gray-dark); text-decoration: line-through; margin-left: 6px; }
+    .badge {
+      display: inline-block; font-size: 10px; padding: 2px 8px;
+      border-radius: 20px; margin-bottom: 6px; font-weight: 600;
+    }
+    .badge-new { background: #e8f4e8; color: #3b6d11; }
+    .badge-sale { background: #fcebeb; color: #a32d2d; }
+
+    /* TELEBIRR SECTION */
+    .payment-section {
+      background: var(--gray-light);
+      border-top: 1px solid var(--gray-mid);
+      border-bottom: 1px solid var(--gray-mid);
+      padding: 3.5rem 2rem;
+    }
+    .payment-inner { max-width: 700px; margin: 0 auto; text-align: center; }
+    .payment-inner h2 { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+    .payment-inner p { color: #555; font-size: 14px; margin-bottom: 2rem; }
+    .telebirr-card {
+      background: var(--white); border: 1px solid var(--gray-mid);
+      border-radius: 12px; padding: 1.5rem;
+      display: flex; align-items: center; gap: 16px;
+      max-width: 400px; margin: 0 auto 1rem;
+    }
+    .tele-logo {
+      width: 54px; height: 54px; border-radius: 12px;
+      background: var(--green); color: white; font-size: 12px;
+      font-weight: 700; display: flex; align-items: center;
+      justify-content: center; text-align: center; line-height: 1.3; flex-shrink: 0;
+    }
+    .tele-info { text-align: left; }
+    .tele-name { font-size: 16px; font-weight: 700; }
+    .tele-sub { font-size: 12px; color: var(--gray-dark); margin-top: 2px; }
+    .tele-steps {
+      display: flex; gap: 1rem; justify-content: center;
+      flex-wrap: wrap; margin-top: 1.5rem;
+    }
+    .tele-step {
+      display: flex; align-items: flex-start; gap: 8px;
+      font-size: 13px; color: #555; max-width: 160px; text-align: left;
+    }
+    .step-num {
+      width: 22px; height: 22px; border-radius: 50%;
+      background: var(--green); color: white; font-size: 12px;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+
+    /* NEWSLETTER */
+    .newsletter {
+      background: var(--black); color: var(--white);
+      padding: 3rem 2rem; text-align: center;
+    }
+    .newsletter h2 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+    .newsletter p { font-size: 14px; opacity: 0.7; margin-bottom: 1.5rem; }
+    .nl-form { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+    .nl-form input {
+      padding: 11px 18px; border-radius: var(--radius); border: none;
+      width: 280px; font-size: 14px; font-family: var(--font);
+    }
+    .nl-form button {
+      padding: 11px 22px; background: var(--gold); color: white;
+      border: none; border-radius: var(--radius); font-size: 14px;
+      cursor: pointer; font-family: var(--font);
+    }
+    .nl-form button:hover { background: var(--gold-dark); }
+
+    /* FOOTER */
+    footer {
+      background: #111; color: #aaa;
+      padding: 3rem 2rem 1.5rem;
+    }
+    .footer-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 2rem; max-width: 1100px; margin: 0 auto 2rem;
+    }
+    .footer-col h4 { color: var(--white); font-size: 14px; margin-bottom: 12px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .footer-col li a { font-size: 13px; color: #aaa; }
+    .footer-col li a:hover { color: var(--white); }
+    .footer-bottom {
+      border-top: 1px solid #333; padding-top: 1.5rem;
+      display: flex; justify-content: space-between; align-items: center;
+      max-width: 1100px; margin: 0 auto; font-size: 12px;
+      flex-wrap: wrap; gap: 1rem;
+    }
+    .social-links { display: flex; gap: 1rem; }
+    .social-links a { color: #aaa; font-size: 13px; }
+    .social-links a:hover { color: var(--white); }
+
+    /* MOBILE NAV */
+    .mobile-menu {
+      display: none; flex-direction: column; gap: 0;
+      background: var(--white); border-bottom: 1px solid var(--gray-mid);
+    }
+    .mobile-menu a {
+      display: block; padding: 14px 2rem; font-size: 15px;
+      border-bottom: 1px solid var(--gray-light);
+    }
+    .mobile-menu.open { display: flex; }
+
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .hamburger { display: block; }
+      .hero h1 { font-size: 32px; }
+      .stats-bar { flex-wrap: wrap; }
+      .stat { min-width: 50%; border-right: none; border-bottom: 1px solid var(--gray-mid); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="logo">BLEZD <span>FASHION</span></a>
+  <ul class="nav-links" role="navigation" aria-label="ዋና ምናሌ">
+    <li><a href="#home">መነሻ</a></li>
+    <li><a href="#categories">ምድቦች</a></li>
+    <li><a href="#products">ምርቶች</a></li>
+    <li><a href="#payment">ክፍያ</a></li>
+    <li><a href="#contact">ያግኙን</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="cart-btn" aria-label="ጋሪ">🛒 ጋሪ (0)</button>
+    <button class="hamburger" aria-label="ምናሌ" onclick="toggleMenu()">☰</button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" onclick="toggleMenu()">መነሻ</a>
+  <a href="#categories" onclick="toggleMenu()">ምድቦች</a>
+  <a href="#products" onclick="toggleMenu()">ምርቶች</a>
+  <a href="#payment" onclick="toggleMenu()">ክፍያ</a>
+  <a href="#contact" onclick="toggleMenu()">ያግኙን</a>
+</div>
+
+<!-- HERO -->
+<section id="home" class="hero" aria-label="ዋና ሄሮ ክፍል">
+  <div class="hero-badge">የ2025 አዲስ ስብስብ</div>
+  <h1>ቅርጽ ይሁን፣<br>ዘዴ ይሁን</h1>
+  <p>ብለዝድ ፋሽን — ዘመናዊ ልብስ፣ ምርጥ ጥራት፣ ተመጣጣኝ ዋጋ። ፋሽናዊ ሕይወትን ይምረጡ።</p>
+  <div class="hero-btns">
+    <button class="btn-dark" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">አሁን ይሸምቱ</button>
+    <button class="btn-outline" onclick="document.getElementById('categories').scrollIntoView({behavior:'smooth'})">ስብስቡን ይመልከቱ</button>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-bar" role="region" aria-label="ስታቲስቲክስ">
+  <div class="stat"><div class="stat-num">500+</div><div class="stat-label">ምርቶች</div></div>
+  <div class="stat"><div class="stat-num">2,000+</div><div class="stat-label">ደስተኛ ደንበኞች</div></div>
+  <div class="stat"><div class="stat-num">24 ሰዓት</div><div class="stat-label">ዴሊቨሪ</div></div>
+  <div class="stat"><div class="stat-num">100%</div><div class="stat-label">ዋስትና</div></div>
+</div>
+
+<!-- CATEGORIES -->
+<div id="categories">
+  <div class="section">
+    <div class="section-header">
+      <h2>ምድቦቻችን</h2>
+      <p>ለሁሉም አገልግሎት — ከፎርማል እስከ ካዥዋል</p>
+    </div>
+    <div class="categories" role="list">
+      <div class="cat-card" role="listitem">
+        <div class="cat-icon">👔</div>
+        <div class="cat-name">ወንዶች</div>
+        <div class="cat-count">120+ ምርቶች</div>
+      </div>
+      <div class="cat-card" role="listitem">
+        <div class="cat-icon">👗</div>
+        <div class="cat-name">ሴቶች</div>
+        <div class="cat-count">180+ ምርቶች</div>
+      </div>
+      <div class="cat-card" role="listitem">
+        <div class="cat-icon">👟</div>
+        <div class="cat-name">ጫማ</div>
+        <div class="cat-count">80+ ምርቶች</div>
+      </div>
+      <div class="cat-card" role="listitem">
+        <div class="cat-icon">👜</div>
+        <div class="cat-name">ቦርሳ</div>
+        <div class="cat-count">60+ ምርቶች</div>
+      </div>
+      <div class="cat-card" role="listitem">
+        <div class="cat-icon">🧢</div>
+        <div class="cat-name">ኮፍያ</div>
+        <div class="cat-count">40+ ምርቶች</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<div id="products" style="border-top: 1px solid #eee;">
+  <div class="section">
+    <div class="section-header">
+      <h2>ምርጥ ምርቶቻችን</h2>
+      <p>በደንበኞቻችን እጅግ የተወደዱ ምርቶች</p>
+    </div>
+    <div class="products" role="list">
+      <article class="product-card" role="listitem">
+        <div class="product-img">👕</div>
+        <div class="product-info">
+          <span class="badge badge-new">አዲስ</span>
+          <div class="product-name">ክላሲክ ቲሸርት</div>
+          <div><span class="product-price">850 ብር</span></div>
+        </div>
+      </article>
+      <article class="product-card" role="listitem">
+        <div class="product-img">👗</div>
+        <div class="product-info">
+          <span class="badge badge-sale">ቅናሽ</span>
+          <div class="product-name">ሰምር ድሬስ</div>
+          <div><span class="product-price">1,200 ብር</span><span class="product-old">1,600 ብር</span></div>
+        </div>
+      </article>
+      <article class="product-card" role="listitem">
+        <div class="product-img">👞</div>
+        <div class="product-info">
+          <div class="product-name">ፎርማል ጫማ</div>
+          <div><span class="product-price">2,400 ብር</span></div>
+        </div>
+      </article>
+      <article class="product-card" role="listitem">
+        <div class="product-img">🧥</div>
+        <div class="product-info">
+          <span class="badge badge-new">አዲስ</span>
+          <div class="product-name">ዊንተር ጃኬት</div>
+          <div><span class="product-price">3,500 ብር</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+
+<!-- TELEBIRR PAYMENT -->
+<section id="payment" class="payment-section" aria-label="ቴሌብር ክፍያ">
+  <div class="payment-inner">
+    <h2>ቴሌብር ይክፈሉ</h2>
+    <p>ፈጣን፣ ደህንነቱ የተጠበቀ እና ቀላል የሞባይል ክፍያ</p>
+    <div class="telebirr-card">
+      <div class="tele-logo">tele<br>birr</div>
+      <div class="tele-info">
+        <div class="tele-name">ቴሌብር</div>
+        <div class="tele-sub">Ethio Telecom · *127#</div>
+      </div>
+    </div>
+    <div class="tele-steps">
+      <div class="tele-step"><div class="step-num">1</div><span>ምርትዎን ጋሪ ይጨምሩ</span></div>
+      <div class="tele-step"><div class="step-num">2</div><span>ቴሌብር ቁጥርዎን ያስገቡ</span></div>
+      <div class="tele-step"><div class="step-num">3</div><span>ፒን ኮድ ያረጋግጡ</span></div>
+      <div class="tele-step"><div class="step-num">4</div><span>ዴሊቨሪ ይጠብቁ!</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter" aria-label="ኢሜይል ምዝገባ">
+  <h2>ቅናሽ ለማግኘት ይመዝገቡ</h2>
+  <p>አዲስ ምርቶችና ልዩ ቅናሾችን ያለቀን ይቀበሉ</p>
+  <div class="nl-form" role="form" aria-label="ኢሜይል ምዝገባ ፎርም">
+    <input type="email" placeholder="ኢሜልዎን ያስገቡ" aria-label="ኢሜይል አድራሻ" />
+    <button type="button">ይመዝገቡ</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact" role="contentinfo">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4>ብለዝድ ፋሽን</h4>
+      <ul>
+        <li><a href="#home">ስለ እኛ</a></li>
+        <li><a href="#products">ምርቶቻችን</a></li>
+        <li><a href="#categories">ምድቦች</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>ደንበኛ አገልግሎት</h4>
+      <ul>
+        <li><a href="#contact">ያግኙን</a></li>
+        <li><a href="#payment">ክፍያ ዘዴዎች</a></li>
+        <li><a href="#contact">ዴሊቨሪ መረጃ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>ያግኙን</h4>
+      <ul>
+        <li><a href="tel:+251911000000">📞 +251 911 000 000</a></li>
+        <li><a href="mailto:info@blezdfashion.com">✉ info@blezdfashion.com</a></li>
+        <li><span style="color:#aaa">📍 አዲስ አበባ፣ ቦሌ</span></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>ሶሻል ሚዲያ</h4>
+      <ul>
+        <li><a href="#">📸 Instagram</a></li>
+        <li><a href="#">🎵 TikTok</a></li>
+        <li><a href="#">👍 Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 ብለዝድ ፋሽን — ሁሉም መብቶች የተጠበቁ ናቸው</span>
+    <div class="social-links">
+      <a href="#">Instagram</a>
+      <a href="#">TikTok</a>
+      <a href="#">Facebook</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const m = document.getElementById('mobileMenu');
+    m.classList.toggle('open');
+  }
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+    });
+  });
+</script>
+</body>
+</html>
